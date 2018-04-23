@@ -1,0 +1,39 @@
+.hew_container {
+  position: relative;
+  width: 50%;
+}
+
+.hew_content {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hew_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.hew_container:hover .hew_overlay {
+  opacity: 1;
+}
+
+.hew_content_back {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
